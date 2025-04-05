@@ -3,7 +3,7 @@ import { Signup } from "./pages/Signup";
 import { Signin } from "./pages/Signin";
 import { Dashboard } from "./pages/Dashboard";
 import { SendMoney } from "./pages/SendMoney";  
-import { TransferSuccess } from "./pages/TransferSuccess";
+import { TransferSuccess } from "./pages/TranferSuccess";
 function App() {
   return (
     <>
