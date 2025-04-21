@@ -21,13 +21,13 @@ export const Signup = () => {
         <SubHeading label={"Enter your infromation to create an account"} />
         <InputBox onChange={e => {
           setFirstName(e.target.value);
-        }} placeholder="kuldeep" label={"First Name"} />
+        }} placeholder="John" label={"First Name"} />
         <InputBox onChange={(e) => {
           setLastName(e.target.value);
-        }} placeholder="jha" label={"Last Name"} />
+        }} placeholder="Doe" label={"Last Name"} />
         <InputBox onChange={e => {
           setUsername(e.target.value);
-        }} placeholder="kuldeep@gmail.com" label={"Email"} />
+        }} placeholder="harkirat@gmail.com" label={"Email"} />
         <InputBox onChange={(e) => {
           setPassword(e.target.value)
         }} placeholder="123456" label={"Password"} />
@@ -40,8 +40,6 @@ export const Signup = () => {
               password
             });
             localStorage.setItem("token", response.data.token)
-            localStorage.setItem("userId", response.data.user._id);
-            localStorage.setItem("firstName", response.data.user.firstName);
             navigate("/dashboard")
           }} label={"Sign up"} />
         </div>
